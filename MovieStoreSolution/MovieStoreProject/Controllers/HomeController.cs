@@ -11,9 +11,9 @@ namespace MovieStoreProject.Controllers
         //
         // GET: /Home/
 
-        public string Index(string genal)
+        public string Index(string s)
         {
-            return "string is"+genal;
+            return "string is"+s;
         }
 
     }
