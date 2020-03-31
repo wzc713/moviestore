@@ -6,14 +6,14 @@ using System.Web.Mvc;
 
 namespace MovieStoreProject.Controllers
 {
-    public class HomeController : Controller
+    public class StoreController : Controller
     {
         //
-        // GET: /Home/
+        // GET: /Store/
 
-        public string Index(string s)
+        public ActionResult Index()
         {
-            return "This is the index page";
+            return View();
         }
 
     }
