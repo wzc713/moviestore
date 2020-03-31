@@ -15,6 +15,14 @@ namespace MovieStoreProject.Controllers
         {
             return View();
         }
+        public ActionResult Browse()
+        {
+            return View();
+        }
+        public ActionResult Details()
+        {
+            return View();
+        }
 
     }
 }
