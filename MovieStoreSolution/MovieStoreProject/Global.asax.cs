@@ -31,6 +31,10 @@ namespace MovieStoreProject
 
         protected void Application_Start()
         {
+            //生成初始化数据
+            System.Data.Entity.Database.SetInitializer(new MovieStoreProject.Models.SampleData());
+            
+            
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);

@@ -9,6 +9,6 @@ D:\webgit\moviestore\MovieStoreSolution\MovieStoreProject\bin\MovieStoreProject.
 D:\webgit\moviestore\MovieStoreSolution\MovieStoreProject\bin\MovieStoreProject.pdb
 D:\webgit\moviestore\MovieStoreSolution\MovieStoreProject\bin\EntityFramework.dll
 D:\webgit\moviestore\MovieStoreSolution\MovieStoreProject\bin\EntityFramework.xml
-D:\webgit\moviestore\MovieStoreSolution\MovieStoreProject\obj\Debug\MovieStoreProject.csprojResolveAssemblyReference.cache
 D:\webgit\moviestore\MovieStoreSolution\MovieStoreProject\obj\Debug\MovieStoreProject.dll
 D:\webgit\moviestore\MovieStoreSolution\MovieStoreProject\obj\Debug\MovieStoreProject.pdb
+D:\webgit\moviestore\MovieStoreSolution\MovieStoreProject\obj\Debug\MovieStoreProject.csprojResolveAssemblyReference.cache

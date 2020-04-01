@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MovieStoreProject.Models;
 
 namespace MovieStoreProject.Controllers
 {
@@ -10,18 +11,21 @@ namespace MovieStoreProject.Controllers
     {
         //
         // GET: /Store/
-
+        MusicStoreEntities storeDB = new MusicStoreEntities();
         public ActionResult Index()
         {
-            return View();
+           var genres=storeDB.Genres.ToList();
+            return View(genres);
         }
-        public ActionResult Browse()
+        public ActionResult Browse(string genre)
         {
-            return View();
+            var genrename = storeDB.Genres.Single(g=>g.Name==genre);
+            return View(genrename);
         }
-        public ActionResult Details()
+        public ActionResult Details(int id)
         {
-            return View();
+            var album = new Album { Title = "the albumid id is " + id };
+            return View(album);
         }
 
     }

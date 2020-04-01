@@ -1,0 +1,18 @@
+﻿@model IEnumerable<MovieStoreProject.Models.Genre>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+           <ul>  @foreach (var genre in Model)
+                 {
+                <li>@Html.ActionLink(genre.Name, "browse", new { genre = genre.Name })</li>  
+                 }
+            </ul> 
+
