@@ -19,13 +19,21 @@ namespace MovieStoreProject.Controllers
         }
         public ActionResult Browse(string genre)
         {
-            var genrename = storeDB.Genres.Single(g=>g.Name==genre);
+            var genrename = storeDB.Genres.Include("Albums").Single(g=>g.Name==genre);
             return View(genrename);
         }
         public ActionResult Details(int id)
         {
-            var album = new Album { Title = "the albumid id is " + id };
+            var album = storeDB.Albums.Find(id);
             return View(album);
+        }
+
+        // GET: /Store/GenreMenu
+        [ChildActionOnly]
+        public ActionResult GenreMenu()
+        {
+            var genres = storeDB.Genres.ToList();
+            return PartialView(genres);
         }
 
     }

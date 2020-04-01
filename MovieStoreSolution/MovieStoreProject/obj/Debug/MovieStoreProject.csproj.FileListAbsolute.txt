@@ -2,7 +2,6 @@ D:\webgit\MovieStoreSolution\MovieStoreProject\bin\MovieStoreProject.dll
 D:\webgit\MovieStoreSolution\MovieStoreProject\bin\MovieStoreProject.pdb
 D:\webgit\MovieStoreSolution\MovieStoreProject\bin\EntityFramework.dll
 D:\webgit\MovieStoreSolution\MovieStoreProject\bin\EntityFramework.xml
-D:\webgit\MovieStoreSolution\MovieStoreProject\obj\Debug\MovieStoreProject.csprojResolveAssemblyReference.cache
 D:\webgit\MovieStoreSolution\MovieStoreProject\obj\Debug\MovieStoreProject.dll
 D:\webgit\MovieStoreSolution\MovieStoreProject\obj\Debug\MovieStoreProject.pdb
 D:\webgit\moviestore\MovieStoreSolution\MovieStoreProject\bin\MovieStoreProject.dll

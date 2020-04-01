@@ -16,6 +16,13 @@
             <li><a href="/store/">Store</a></li>
         </ul>
     </div>
-    @RenderBody()
+   @{Html.RenderAction("GenreMenu", "Store");}
+
+    <div id="main">
+        @RenderBody()
+    </div>
+    <div id="footer">
+        built with <a href="http://asp.net/mvc">ASP.NET MVC 3</a>
+    </div>
 </body>
 </html>

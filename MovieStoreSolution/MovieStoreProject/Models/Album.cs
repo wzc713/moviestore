@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Collections.Generic;
 
 namespace MovieStoreProject.Models
 {
@@ -13,7 +14,8 @@ namespace MovieStoreProject.Models
         public string Title { get; set; }
         public decimal Price { get; set; }
         public string AlbumArtUrl { get; set; }
-        public Genre Genre { get; set; }
-        public Artist Artist { get; set; }
+        public virtual Genre Genre { get; set; }
+        public virtual Artist Artist { get; set; }
+        //public virtual List<OrderDetail> OrderDetails { get; set; }
     }
 }

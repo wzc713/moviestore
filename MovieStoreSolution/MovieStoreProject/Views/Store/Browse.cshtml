@@ -1,7 +1,15 @@
 ﻿@model MovieStoreProject.Models.Genre
-
 @{
     ViewBag.Title = "Browse";
 }
+<div class="genre">
+    <h3>
+        <em>@Model.Name</em> Albums</h3>
 
-<h2>Browse genre:@Model.Name</h2>
+    <ul id="album-list">
+        @foreach (var album in Model.Albums)
+        { <li><a href="@Url.Action("Details", new { id = album.AlbumId })">
+            <img src="@album.AlbumArtUrl" />
+            <span>@album.Title</span> </a></li> }
+    </ul>
+</div>
